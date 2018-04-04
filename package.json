@@ -1,6 +1,6 @@
 {
   "name": "utf8-to-ansi",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./dist/utf8ToAnsi.js",
   "repository": "git@github.com:topscores/utf8ToAnsi.git",
   "author": "Arnupharp Viratanapanu <arnupharp@larngeartech.com>",
