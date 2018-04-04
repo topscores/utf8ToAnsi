@@ -1,14 +1,13 @@
-export const convertOneCharacter = c => {
+export const charToByte = c => {
   return c.charCodeAt(0) < 128
-    ? c // This is english alphabet
-    : String.fromCharCode(
-        c.charCodeAt(0) - 0x0e01 /* Utf8 ก */ + 161 /* Window-874 ก*/
-      )
+    ? c.charCodeAt(0) // This is english alphabet
+    : c.charCodeAt(0) - 0x0e01 /* Utf8 ก */ + 161 /* Window-874 ก*/
 }
-
+export const toByteArray = s => {
+  return s.split('').map(c => charToByte(c))
+}
 export const utf8ToAnsi = s => {
-  return s
-    .split('')
-    .map(c => convertOneCharacter(c))
+  return toByteArray(s)
+    .map(c => String.fromCharCode(c))
     .reduce((converted, c) => converted + c)
 }
