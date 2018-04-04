@@ -4,7 +4,7 @@ A utility to convert utf8 string to ansi windows-874
 
 ## Installation
 
-`yarn add utf8ToAnsi` or `npm install utf8ToAnsi`
+`yarn add utf8-to-ansi` or `npm install utf8-to-ansi`
 
 ## Example
 
