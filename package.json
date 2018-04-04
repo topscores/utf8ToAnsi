@@ -1,5 +1,5 @@
 {
-  "name": "utf8ToAnsi",
+  "name": "utf8-to-ansi",
   "version": "1.0.0",
   "main": "./dist/utf8ToAnsi.js",
   "repository": "git@github.com:topscores/utf8ToAnsi.git",
